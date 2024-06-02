@@ -1,36 +1,53 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
-import LoginView from '../views/LoginView.vue'
-import LogoutView from '../views/LogoutView.vue'
+import { createRouter, createWebHashHistory } from "vue-router";
+import chamadosView from "../views/Chamados.vue";
+import AboutView from "../views/About.vue";
+import LoginView from "../views/Login.vue";
+import ChatView from "../views/Chat.vue";
+import LogoutView from "../views/Logout.vue";
+import ConfigView from "../views/configurações/config.vue";
+import HomeView from "@/views/HomeView.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: "/chamados",
+    name: "chamados",
+    component: chamadosView,
   },
   {
-    path: '/about',
-    name: 'about',
-    component: AboutView
+    path: "/about",
+    name: "about",
+    component: AboutView,
   },
   {
-    path: '/login',
-    name: 'login',
-    component: LoginView
+    path: "/chat",
+    name: "chat",
+    component: ChatView,
   },
   {
-    path: '/logout',
-    name: 'logout',
-    component: LogoutView
-  }
-]
-
+    path: "/config",
+    name: "config",
+    component: ConfigView,
+  },
+  {
+    path: "/home",
+    name: "home",
+    component: HomeView,
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: LoginView,
+  },
+  {
+    path: "/logout",
+    name: "logout",
+    component: LogoutView,
+  },
+];
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
