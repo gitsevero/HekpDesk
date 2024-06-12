@@ -4,7 +4,7 @@
       <v-app-bar color="deep-purple" absolute flat>
         <v-app-bar-nav-icon
           @click="toggleRail"
-          :icon="rail ? 'mdi-menu' : 'mdi-close'"
+          icon="mdi-menu"
         ></v-app-bar-nav-icon>
 
         <v-app-bar-title>HELP DESK</v-app-bar-title>
