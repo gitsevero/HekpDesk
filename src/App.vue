@@ -76,7 +76,7 @@
         </template>
       </v-navigation-drawer>
 
-      <v-main class="bg-blue" @click="rail = true">
+      <v-main class="bg-blue pr-2 pb-2" @click="rail = true">
         <router-view />
       </v-main>
     </v-layout>

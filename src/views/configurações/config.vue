@@ -26,11 +26,7 @@ export default {
 </script>
 <style scoped>
 #card {
-  height: 98.5%;
-  border-radius: 20px;
-
-  margin-bottom: 10px;
-  margin-right: 10px;
+  height: 100%;
 }
 
 .title {
