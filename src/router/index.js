@@ -28,6 +28,7 @@ const routes = [
     name: "config",
     component: ConfigView,
   },
+
   {
     path: "/home",
     name: "home",

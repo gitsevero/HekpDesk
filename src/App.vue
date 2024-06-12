@@ -1,7 +1,7 @@
 <template>
-  <v-card>
+  <v-card id="main">
     <v-layout>
-      <v-app-bar color="deep-purple" absolute flat>
+      <v-app-bar height="40" color="blue" flat>
         <v-app-bar-nav-icon
           @click="toggleRail"
           icon="mdi-menu"
@@ -18,12 +18,7 @@
           >
         </v-btn>
       </v-app-bar>
-      <v-navigation-drawer
-        theme="dark"
-        class="bg-deep-purple"
-        :rail="rail"
-        permanent
-      >
+      <v-navigation-drawer theme="dark" class="bg-blue" :rail="rail" permanent>
         <v-divider></v-divider>
         <router-link to="/home">
           <v-list-item
@@ -81,11 +76,7 @@
         </template>
       </v-navigation-drawer>
 
-      <v-main
-        class="d-flex justify-center align-center"
-        @click="rail = true"
-        style="min-height: 100vh"
-      >
+      <v-main class="bg-blue" @click="rail = true">
         <router-view />
       </v-main>
     </v-layout>
@@ -119,5 +110,12 @@ export default {
 a {
   text-decoration: none;
   color: white;
+}
+
+#main {
+  height: 100%;
+}
+.v-layout {
+  height: 100vh;
 }
 </style>
